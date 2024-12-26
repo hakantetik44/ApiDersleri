@@ -15,23 +15,34 @@
     </properties>
 
     <dependencies>
+        <!-- REST Assured: API testleri yazmak için kullanılan temel kütüphane.
+             HTTP istekleri gönderme, yanıtları doğrulama ve API testlerini kolayca yazmanızı sağlar -->
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
             <version>5.3.0</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- TestNG: Test framework'ü. JUnit'e alternatif olarak kullanılır.
+             Test sınıflarını çalıştırma, test grupları oluşturma ve test raporları üretme gibi özellikleri vardır -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.7.1</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- Jackson: JSON işlemleri için kullanılan kütüphane.
+             JSON verilerini Java objelerine (ve tam tersi) dönüştürmeyi sağlar -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>2.15.2</version>
         </dependency>
+
+        <!-- SLF4J: Loglama için kullanılan kütüphane.
+             Test sürecinde detaylı loglar almamızı ve hata ayıklamamızı kolaylaştırır -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
